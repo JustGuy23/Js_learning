@@ -149,13 +149,16 @@ section#main div.losung{
 	width: auto;
 	left: 102px;
 }
-
+section#about{
+    margin: 0px 100px;
+}
 section#about header{
     display: grid;
-    grid-template-columns: 280px auto 470px;
+    grid-template-columns: 280px auto 370px;
+    width: 952px;
     align-items: center;
     gap: 10px;
-    padding-left: 102px;
+    
 }
 
 section#about figcaption{
@@ -172,9 +175,41 @@ section#about header h2{
     color: rgba(34, 34, 34, 0.1);
     text-transform: uppercase;
     margin: 0;
-    margin-right: 90px;
+    width: 370px;
 }
-
+section#about article#logo_frow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color:#222222;
+    grid-gap:10px;
+    border: 1px solid #A8DCEC;
+    padding-top: 147px;
+}
+#inline_text{
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+section#about article#logo_frow h3
+{
+font-family: Nunito;
+font-size: 36px;
+font-weight: 600;
+line-height: 49px;
+letter-spacing: 0em;
+right: 0px;
+display:inline-block;
+margin: 0px;
+}
+section#about article#logo_frow p{
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+display:inline-block;
+margin-top: 16px;
+}
 div.line{
     border-bottom: 1px solid black;
 }
