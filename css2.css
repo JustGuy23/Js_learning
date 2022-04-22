@@ -131,7 +131,7 @@ margin: 0px;
 color: #313235;
 }
 
-section#main div a.button{
+section  a.button{
     border: none;
     background-color: #DAA520;
     border-radius: 4px;
@@ -155,7 +155,7 @@ section#about{
 }
 section #header{
     display: grid;
-    grid-template-columns: 280px auto auto;
+    grid-template-columns: fit-content(100%) auto fit-content(100%);
     grid-auto-flow: row;
     width: 952px;
     align-items: center;
@@ -172,15 +172,17 @@ font-weight: 700;
 font-size: 36px;
 line-height: 49px;
 width: 280px;
+width: fit-content;
 }
 section header h2{
     font-size: 72px;
     color: rgba(34, 34, 34, 0.1);
     text-transform: uppercase;
     width: fit-content;
-    right: 0px;
     position:relative;
     right: 0px;
+    text-align: right;
+
 }
 
 section article#logo_frow {
@@ -255,9 +257,23 @@ line-height: 49px;
     top:50px;
 }
 section#how{
-    margin: 0px  100px ;
-    position: relative;
-    display:inline-block;
+    margin: 0px  102px ;
+    
+    
+}
+section#how div{
+    display:grid;
+    grid-template-columns: repeat(4, 2fr);
+}
+section#how article {
+display: flex;   
+    justify-content: center;
+    align-self: center;
+    margin-top: 78px;
+    }
+
+section#categories{
+    margin:0px 102px;
 }
 
 .rect-yellow{
