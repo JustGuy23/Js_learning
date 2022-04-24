@@ -6,9 +6,7 @@
 	margin: 0px 0px;
     font-family: 'Nunito';
 }
-.header{
-   
-}
+
 .nav-bar{
 	 display: grid;
     grid-template-columns: 1fr 3fr;
@@ -185,15 +183,15 @@ section header h2{
 
 }
 
-section article#logo_frow {
+section#about article#logo_frow {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     color:#222222;
     grid-gap:10px;
-    padding-top: 147px;
+    padding-top: 57px;
     position: relative;
-    margin-bottom: 160px;
+    margin-bottom: 130px;
 }
 section#about #flower{
     z-index: -2;
@@ -231,11 +229,16 @@ div.line{
 section#about article#srow{
     display: grid;
     grid-template-columns: auto auto;
+    padding-top: 130px;
+    height:132px ;
+    position: relative;
+    margin-bottom: 270px;
+    
 }
 section#about img#spoons{
     position: absolute;
-    top:1486px;
-    left:865px;
+   right: -160px;
+   top: -30px;
 }
 section#about #title header{
 font-weight: 600;
@@ -247,15 +250,17 @@ line-height: 49px;
     font-size: 24px;
     line-height: 33px;
  }
-.rounded-rect{
+
+.rounded-rect#salad{
     border-bottom-left-radius: 100px;
     border-top-right-radius: 100px;
     width: 280px;
     height: 400px;
     position: absolute;
     z-index: -1;
-    top:50px;
+    top: -35px;
 }
+
 section#how{
     margin: 0px  102px ;
     
@@ -274,8 +279,70 @@ display: flex;
 
 section#categories{
     margin:0px 102px;
+    display:relative;
 }
+section#categories .list{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 40px 56px;
+}
+section#categories .list h3{
+	font-weight: 800;
+font-size: 24px;
+line-height: 33px;
+text-align: left;
+color: #3E3F43;
+padding-left: 20px;
+}
+section#categories .list a#button{
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+color: black;
+border: 2px solid #3e3f43;
+border-radius: 4px;
+text-decoration: none;
+width: fit-content;
+padding: 10px 19px;
+right: 16px;
+bottom: 24px;
+position: absolute;
 
+}
+section#categories .list img{
+	position:relative ;
+	 max-width:100%;
+    max-height:235px;
+    vertical-align: middle;
+}
+.rounded-rect{
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 280px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: -1;
+    justify-content:flex-start;
+	
+    
+}
+.rounded-rect div#center img#desk{
+	position: absolute;
+	left: 0px;
+	top: 88px;
+}
+.rounded-rect div#center img#radio{
+	position: absolute;
+	top: 130px;
+}
+.rounded-rect div#center{
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .rect-yellow{
     background-color: #F7DEA6;
 }
