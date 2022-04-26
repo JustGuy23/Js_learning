@@ -23,12 +23,6 @@
     align-items: center;
     margin: 0;
 }
-.logo caprion{
-	font-family: Nunito;
-    margin-left: 10px;
-    font-size: 24px;
-    color: #3E3F43;
-}
 .nav-menu{
 	display: grid;
     grid-template-columns: repeat(6, 1fr);
