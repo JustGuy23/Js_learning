@@ -5,6 +5,8 @@
 	position: relative;
 	margin: 0px 0px;
     font-family: 'Nunito';
+    justify-content: center;
+    margin-left: 50%;
 }
 
 .nav-bar{
