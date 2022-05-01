@@ -9,12 +9,13 @@
     <link rel="stylesheet" type="text/css" href="styles/css2.css">
 	<title>test project</title>
 </head>
-<body class="body">
-<div class="angle"></div>
+<body >
 
 <!-- header-->
-
-<div class="header">
+<section id="introduction"> 
+    <div class="angle">
+        <img src="img/flowerbig.svg">
+    </div>
 	<div class="nav-bar">
 		<figure>
             <img src="img/flower.svg" alt="">
@@ -26,21 +27,21 @@
             <a href="#">How it works</a>
             <a href="#">Categories</a>
             <a href="#">Testimony</a>
-            <a href="#" class="button">Sign Up</a>
+            <a href="#" class="button" id="signup">Sign Up</a>
         </nav>
 	</div>
          <section id="main">
+             <!--dont know how to justify text div to start -->
         <div class="losung">
             <p>Are you looking for <strong>woodden furniture</strong> for your place?</p>
             <h1>This is the</br> Right Place</h1>
             <a href="#" class="button">Explore Furniture</a>
             
         </div>
-        <img src="img/table.png">
+        <img  id="table" src="img/table.png">
    		</section>
-</div>
+</section>
 	<!--main-->
-	<!--  thank you for old code-->
     <section id="about">
         <header id="header">
             <figure>
@@ -59,8 +60,8 @@
             <img id="flower" src="img/flowerbig.svg "alt="">   
             </div>           
             <div id="inline_text">
-            <h3>WOODIES is the home of <strong>wooden furniture</strong> </h3>
-            <p>the answer to your need for furniture </br> with shapes, sizes and colors. </p>
+            <h3>WOODIES is the home of <strong> modern wooden furniture</strong> </h3>
+            <p>the answer to your need for furniture  with shapes, sizes and colors. </p>
             </div>
         </article>
 
@@ -91,6 +92,7 @@
         </div>
       <article><a href="#" class="button">Get Personalized Now</a></article>
     </section>
+    <!--categories-->
     <section id="categories">
         <header id="header">
             <figure>
@@ -146,6 +148,7 @@
 
         </div>
     </section>
+    <!--testimony-->
     <section id="testimony">
         <header id="header">
             <figure>
@@ -156,10 +159,10 @@
             <h2>testimony</h2>
         </header>
         <div class="gallery">
-            <div class="rect-mini gallery-item" style=background-image:url(img/apartment-bed-bedroom.png) >
+            <div class="rect-mini" style=background-image:url(img/apartment-bed-bedroom.png) >
             
             </div>
-            <div class="rect-mini gallery-item"  style=background-image:url(img/breakfast-contemporary-dayligh.png)></div>
+            <div class="rect-mini "  style=background-image:url(img/breakfast-contemporary-dayligh.png)></div>
             <div>
             <div  id="rewiew"class="gallery-item rounded-rect">
                 <div class="block">
@@ -215,7 +218,44 @@
                           </form>
                     
                 </div>
-                <div class="contacts"></div>
+                <div class="contacts">
+                    <ul>
+                        <li class="head_figure">
+                            <figure>
+                                <img src="img/flower.svg" alt="">
+                                <figcaption>WOODIES</figcaption>
+                            </figure>
+                        </li>
+                        <li><a href="tel:0128967453">(012) 8967453</a></li>
+                        <li><a href="mailto:woodies@gmail.com">woodies@gmail.com</a></li>
+                        <li><a href="#about">Jakarta, Indonesia</a></li>
+                    </ul>
+                    <ul>
+                        <li class="head"><a href="#">Product</a></li>
+                        <li><a href="#">Furnitures</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                    <ul>
+                        <li class="head"><a href="#">Resources</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <li class="head"><a href="#">Company</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                    <ul style="margin-right:0px">
+                        <li class="head"  ><a href="#">Follow Us</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            <div id="copyright">© 2020 WOODIES</div>
         </footer>
 
 </body>

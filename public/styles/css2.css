@@ -1,21 +1,11 @@
-.body{
+body{
 	width:1152px ;
 	height: 4725px;
 	background-color: #fff;
-	position: relative;
-	margin: 0px 0px;
     font-family: 'Nunito';
     justify-content: center;
     margin:auto;
-}
-
-.nav-bar{
-	 display: grid;
-    grid-template-columns: 1fr 3fr;
-    margin-top: 20px;
-    margin-bottom: 130px;
-    margin-left:80px;
-    margin-right: 28px;
+    padding: 0px;
 }
 .logo{
 	display: grid;
@@ -28,17 +18,24 @@
     grid-template-columns: repeat(6, 1fr);
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
 .angle{
 	position: absolute;
 	right: 0px;
-	top: 0px;
+	top: -10%;
 	width: 380px;
 	height: 800px;
-	border-bottom-left-radius: 26%;
+	border-bottom-left-radius: 120px;
 	background: #F9BDBD;
 	z-index: -1;
+    display: inline-flexbox;
 
+}
+.angle img{
+    position: absolute;
+    bottom:18PX;
+    left:-70%;
 }
 .backlogo{
 	position: absolute;
@@ -65,36 +62,65 @@ figure figcaption{
     margin-left: 10px;
     font-size: 24px;
     color: #3E3F43;
+    font-weight: 1000;
+}
+
+section#introduction .nav-bar{
+    display: grid;
+    grid-template-columns: 33% auto;
 }
 
 nav{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    text-align: center;
-    align-items: center;
+    display: flex;
+    float:left;
+    flex-flow: row nowrap;
+height: 40px;
+padding: auto;
+justify-content: space-between;
 }
 
 nav a{
     font-family: Nunito;
-    font-size: 16px;
-    color: #222222;
     text-decoration: none;
+    font-weight: 400;
+font-size: 16px;
+color: rgba(34, 34, 34, 0.75);
+display: inline-block;
+width: fit-content;
+align-self: center;
+
 }
 
 nav a.home{
     color: #DAA520;
+    margin-left: 0px;
 }
-
- nav a.button{
-    border: 1px solid #3E3F43;
-    border-radius: 8px;
-    width: 137px;
+section a#signup{
+    width: 20%;
     height: 40px;
-    display: grid;
-    align-items: center;
-    text-transform: uppercase;
-}
+    border-radius: 8px;
+    border:1px solid #222222;
+    color:#222222;
+    background: none;
+    font-weight: 700;
+font-size: 16px;
+line-height: 22px;
 
+}
+section#introduction {
+    position: relative;
+}
+section#introduction figcaption{
+    font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+letter-spacing: 0.25em;
+}
+section#introduction img#table{
+    max-height: fit-content;
+    width: auto;
+    height:90%;
+}
 section#main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -103,6 +129,8 @@ section#main{
     background-repeat: no-repeat;
     background-position: 500px 170px;
     margin-bottom: 150px;
+    position: relative;
+    align-items: center;
 }
 
 section#main div p{
@@ -110,17 +138,17 @@ section#main div p{
     font-style: normal;
     font-size: 35px;
     color: #3E3F43;
-    padding-bottom: 0px;
     margin-bottom: 0px;
+    padding:8px ;
 }
 
 section#main div h1{
  font-family: 'Nunito';
 font-style: normal;
-font-weight: 700;
 font-size: 72px;
 line-height: 98px;
 margin: 0px;
+padding:8px ;
 
 color: #313235;
 }
@@ -136,37 +164,37 @@ section  a.button{
     text-align: center;
     text-decoration: none;
     color: white;
-    font-family: Nunito;
+    font-family:"Nunito";
+    margin: 16px;
+    
 }
 section#main div.losung{
 	position: relative;
 	height: 504px;
 	width: auto;
-	left: 102px;
+
+ 
 }
-section#about{
-    margin: 0px 100px;
-}
+
 section #header{
     display: grid;
     grid-template-columns: fit-content(100%) auto fit-content(100%);
     grid-auto-flow: row;
-    width: 952px;
+    width: 100%;
     align-items: center;
     gap: 10px;
     position: relative;
-
-    
+    margin-top:120px ;
 }
 
 section figcaption{
-	font-family: 'Nunito';
+font-family: 'Nunito';
 font-style: normal;
-font-weight: 700;
 font-size: 36px;
 line-height: 49px;
 width: 280px;
 width: fit-content;
+
 }
 section header h2{
     font-size: 72px;
@@ -176,18 +204,23 @@ section header h2{
     position:relative;
     right: 0px;
     text-align: right;
+    font-weight: 1000;
+    font-size: 82px;
+    line-height: 98px;
+  
 
 }
-
+section#about{
+    justify-items: center;
+}
 section#about article#logo_frow {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     color:#222222;
     grid-gap:10px;
     padding-top: 57px;
     position: relative;
-    margin-bottom: 130px;
+    align-items: start;
 }
 section#about #flower{
     z-index: -2;
@@ -200,12 +233,13 @@ section#about #flower{
     display: flex;
     flex-direction: column;
     margin-left: 70px;
+    margin-top: 30px;
 }
 section#about article#logo_frow h3
 {
 font-family: Nunito;
 font-size: 36px;
-font-weight: 600;
+
 line-height: 49px;
 letter-spacing: 0em;
 right: 0px;
@@ -213,38 +247,43 @@ display:inline-block;
 margin: 0px;
 }
 section#about article#logo_frow p{
-font-weight: 600;
+
 font-size: 24px;
 line-height: 33px;
 display:inline-block;
 margin-top: 16px;
+font-weight: 600, Semi Bold;
 }
 div.line{
     border-bottom: 1px solid black;
 }
 section#about article#srow{
     display: grid;
-    grid-template-columns: auto auto;
-    padding-top: 130px;
-    height:132px ;
+    grid-template-columns: 70% auto;
     position: relative;
-    margin-bottom: 270px;
-    
+    align-items: center;
+    margin-top: 10vmin;
 }
 section#about img#spoons{
-    position: absolute;
-   right: -160px;
-   top: -30px;
+    position :relative;
+    right:-20%
+
 }
 section#about #title header{
-font-weight: 600;
+
 font-size: 36px;
 line-height: 49px;
+font-weight: 800;
+
+}
+section#about strong{
+    font-weight :1000;
 }
  section#about #title p{
-    font-weight: 600;
+    
     font-size: 24px;
     line-height: 33px;
+    font-weight:900;
  }
 
 .rounded-rect#salad{
@@ -258,10 +297,11 @@ line-height: 49px;
 }
 
 section#how{
-    margin: 0px  102px ;
-    
-    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
+
 section#how div{
     display:grid;
     grid-template-columns: repeat(4, 2fr);
@@ -272,15 +312,21 @@ display: flex;
     align-self: center;
     margin-top: 78px;
     }
+section#how .button{
+    font-weight: 700;
+    justify-self:center;
 
+}
 section#categories{
-    margin:0px 102px;
     display:relative;
+    justify-items: center;
 }
 section#categories .list{
 	display: grid;
 	grid-template-columns: auto auto auto;
 	gap: 40px 56px;
+    grid-column-gap: 10%;
+    grid-row-gap: 11.1%;
 }
 section#categories .item{
     position: relative;
@@ -294,14 +340,15 @@ color: #3E3F43;
 padding-left: 20px;
 }
 section#categories .list a#button{
-font-weight: 600;
-font-size: 18px;
-line-height: 25px;
+
+font-size: 16px;
+line-height: 22px;
 text-align: center;
 color: black;
 border: 2px solid #3e3f43;
 border-radius: 4px;
 text-decoration: none;
+font-weight: 600;
 width: fit-content;
 padding: 10px 19px;
 right: 16px;
@@ -332,18 +379,21 @@ display: flex;
   align-items: center;
 }
 section#testimony{
-    margin:0px 102px 151PX;
+    margin:0px 0px 151PX;
+    justify-content: center;
 }
 section#testimony .gallery{
     display: grid;
-    grid-template-columns: 240px 240px auto;
-    gap:40px;
+    grid-template-columns: 27% 27% 40%;
+    gap:3%;
     align-items: start;
 }
 
 section#testimony  div#rewiew{
-    width: 384px;
-    height: 280px;
+    min-width: 384px;
+    min-height: 280px;
+    height: auto;
+    width: 100%;
     border: 1px solid #A8DCEC;
     box-sizing: border-box;
 }
@@ -354,10 +404,9 @@ section#testimony  div .block .rating{
 display: inline-block;
 }
 section#testimony div .block p{
-    font-weight: 600;
+    
 font-size: 14px;
 line-height: 19px;
-
 color: #3E3F43;
 }
 section#testimony div .block .account{
@@ -372,7 +421,7 @@ section#testimony div .block .account img{
 }
 section#testimony div .block .account p{
     font-style: normal;
-font-weight: 600;
+
 margin: 0px;
 font-size: 12px;
 line-height: 16px;
@@ -382,7 +431,7 @@ color: #AFAFAF;
 }
 section#testimony #buttons a{
 display: inline-block;
- width: 40px;
+ width: fit-content;
 height: 8px;
 
 background: #E5E5E5;
@@ -402,7 +451,8 @@ margin: 0px 8px;
 }   
 section#testimony div#list{
     display:flex;
-    flex:49%;  
+    flex:49%; 
+    width: 100%;
     justify-content: space-between;
 }
 section#testimony div .button{
@@ -453,11 +503,16 @@ margin: 0px;
     transform: rotate(-45deg);
   }
 .rect-mini{
-    width: 240px;
-    height: 320px;
+    min-width: 240px;
+    width: 100%;
+    min-height: 320px;
+    height:auto;
     position:relative;
     border-top-left-radius:100px;
     border-bottom-right-radius: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 
 }
@@ -476,14 +531,14 @@ footer {
      
     height:455px;
     width: 100%;
-    background-image: url(img/pexels-photo-2.png),url(img/pexels-photo-1.png);
+    background-image:linear-gradient(to top , transparent 60%, white), url(../img/pexels-photo-2.png),url(../img/pexels-photo-1.png);
     background-repeat: no-repeat, no-repeat;
-    background-position:left, right;
+    background-position:right, left;
 }
 footer .find-us{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding:67px 102px 0px;
+    grid-template-columns: 60% auto;
+    padding:10px 102px 50px;
     align-items: center;
  }
  footer .find-us p{
@@ -497,21 +552,16 @@ footer .find-us{
   form{
     background: #FFFFFF;
     box-sizing: border-box;
-    width: 355px;
+    width: 100%;
  }
- form::after{
-    content: "";
-    clear: both;
-    display: table;
- }
- form input[type=text]{
+form input[type=text]{
     background: #FFFFFF;
     border: 1px solid #DAA520;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     float: left;
     height: 40px;
-  width: 70%;
+  width: 69%;
   border-right:none;
   padding-left:16px;
  }
@@ -521,15 +571,63 @@ footer .find-us{
     box-sizing: border-box;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    float: left;
-  width: 20%;
-  padding: 10px;
+  padding: 10px 0px;
   color: white;
-  font-size: 17px;
   height: 44px;
   align-items: center;
+  width: 25%;
   margin: 0px;
   font-weight: 600;
-font-size: 16px;
-line-height: 22px;
+ font-size: 16px;
+ line-height: 22px;
+}
+footer .contacts{
+    margin :26px 31% 0px 102px ;
+    border-top:1px solid #C4C4C4;
+    display: grid;
+    display: flex; /* 130 пикселей относится к 192 как 67%*/
+    color:#8D8D8D;
+    gap:0px;
+    flex:19%;
+}
+footer .contacts ul{
+    padding-left: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex:19%;
+    flex-wrap: wrap;
+    margin-right:6%;
+}
+footer .contacts li{
+list-style: none;
+padding: 16px 0px;
+font-weight: 400;
+font-size: 14px;
+line-height: 8px;
+flex:1;
+}
+footer .contacts li a{
+    text-decoration: none;
+    color: #8D8D8D;
+;
+}
+footer .contacts .head{
+    font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+display: block;
+color: #333333;
+
+
+}
+footer .contacts .head_figure{
+    padding-top: 10px;
+    padding-bottom:16px ;
+    
+}
+footer #copyright{
+    text-align: center;
+    margin-top: 3em;
 }
